@@ -8,13 +8,13 @@ const userStore = useUserStore();
 <template>
     <Menubar>
         <template #start>
-            <div class="flex align-items-center gap-2">
+            <div class="flex items-center gap-2">
                 <img alt="logo" src="/logo.svg" width="40" />
                 <span>Vue 3</span>
             </div>
         </template>
         <template #end>
-            <div class="flex align-items-center gap-2">
+            <div class="flex items-center gap-2">
                 <span>{{ userStore.user?.name }}</span>
                 <button @click="">Logout</button>
             </div>

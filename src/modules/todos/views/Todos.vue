@@ -21,12 +21,12 @@ function onDelete(id: number) {
         Todos
     </h1>
     <Transition name="fade" mode="out-in">
-        <div v-if="store.loading" class=" flex gap-2 flex-column">
+        <div v-if="store.loading" class="flex gap-2 flex-col">
             <Skeleton width="100%" height="50px" />
             <Skeleton width="100%" height="50px" />
             <Skeleton width="100%" height="50px" />
         </div>
-        <div class="flex gap-2 flex-column" v-else>
+        <div class="flex gap-2 flex-col" v-else>
             <TodoItem v-for="(todo, i) in store.todos" :key="todo.id" v-model="store.todos[i]" @delete="onDelete(todo.id)" />
         </div>
     </Transition>

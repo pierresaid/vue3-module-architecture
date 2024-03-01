@@ -3,7 +3,7 @@ import { createPinia } from 'pinia'
 
 import PrimeVue from 'primevue/config';
 import 'primevue/resources/themes/aura-dark-blue/theme.css'
-import '/node_modules/primeflex/primeflex.css'
+import './assets/main.css'
 
 import App from './App.vue'
 import router from './router'
